@@ -5,9 +5,11 @@ async function connect() {
         await mongoose.connect("mongodb://localhost:27017/CRUD", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-          });
+        });
+        console.log("Connected to MongoDB");
     } catch (error) {
-        console.log("connect fails");
+        console.log("Connect fails:", error);
     }
 }
+
 module.exports = { connect };
