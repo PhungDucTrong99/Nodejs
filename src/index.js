@@ -17,6 +17,7 @@ const UserModel = mongoose.model("users", UserSchema)
 
 app.get("/getUsers", (req, res) => {
   UserModel.find({}).then(function(user) {
+    console.log("connect db")
     res.json(user)
   }).catch(function(err) {
     console.log(err)
