@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/PhungDucTrong99/nodejs_blog#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "mongoose": "^7.4.4"
+    "express-session": "^1.17.3",
+    "mongoose": "^7.4.5"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
